@@ -14,7 +14,7 @@ class DemoNode(object):
     def cbImage(self, image_msg):
         msg = Twist2DStamped()
         msg.v = 0.0
-        msg.omega = 0.5
+        msg.omega = 1
         self.pub_cmd.publish(msg)
 
 if __name__ == '__main__': 
